@@ -1,0 +1,56 @@
+package hashing;
+import java.util.*;
+
+class hash_chaining{
+    static int prime = 1000000007;
+    static int multiplier = 263;
+    static int bucketCount;
+
+   static final Map<Integer, List<String>> map = new HashMap<>();
+   static List<String> list;
+
+    static int hashFunc(String s) {
+        long hash = 0;
+        for (int i = s.length() - 1; i >= 0; --i)
+            hash = (hash * multiplier + s.charAt(i)) % prime;
+        return (int)hash % bucketCount;
+    }
+    static void add(Integer key, String value) {
+    	 list= map.get(key);
+    	if (list == null) {
+            list = new ArrayList<String>();
+            map.put(key, list);
+        }
+        list.add(value);
+    }
+    static void del(Integer key, String value) {
+        list=map.get(key);
+    	if (list == null) ;
+        else{
+        map.remove(value);        }
+    }
+
+    public Iterable<String> getValues(Integer key) {
+        List<String> list = map.get(key);
+        return list == null ? Collections.<String>emptyList()
+                            : Collections.unmodifiableList(list);
+    }	
+    public static void main(String[] args){
+    	Scanner sc=new Scanner(System.in);
+    	bucketCount=sc.nextInt();
+    	int q=sc.nextInt();
+    	while(q>=0){
+    		String query=sc.next();
+    		switch(query){
+    		case "add":
+    			String val=sc.next();
+    			add(hashFunc(val),val);
+    			break;
+    		case "del":
+    			
+    			break;
+    		}
+    		q--;
+    	}
+    }
+}

@@ -1,0 +1,36 @@
+
+Invoking autoreconf in build directory: C:/Users/dell pc/workspace/conv/
+
+
+Configuration failed with error
+(Cannot run program "sh" (in directory "C:\Users\dell pc\workspace\conv"): CreateProcess error=2, The system cannot find the file specified)Build stopped
+()
+Invoking autoreconf in build directory: C:/Users/dell pc/workspace/conv/
+
+
+Configuration failed with error
+(Cannot run program "sh" (in directory "C:\Users\dell pc\workspace\conv"): CreateProcess error=2, The system cannot find the file specified)Build stopped
+()23:35:56 **** Build of configuration Build (GNU) for project conv ****
+make all 
+Cannot run program "make": Launching failed
+
+Error: Program "make" not found in PATH
+PATH=[C:/Program Files/Java/jre1.8.0_65/bin/server;C:/Program Files/Java/jre1.8.0_65/bin;C:/Program Files/Java/jre1.8.0_65/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\MATLAB\R2012a\runtime\win64;C:\Program Files\MATLAB\R2012a\bin;C:\Program Files\Java\jdk1.8.0_65\bin;C:\Program Files\Java\jre1.8.0_65\bin;C:\Users\dell pc\Desktop;]
+
+Invoking autoreconf in build directory: C:/Users/dell pc/workspace/conv/
+
+
+Configuration failed with error
+(Cannot run program "sh" (in directory "C:\Users\dell pc\workspace\conv"): CreateProcess error=2, The system cannot find the file specified)Build stopped
+()23:38:45 **** Incremental Build of configuration Build (GNU) for project conv ****
+make all 
+Cannot run program "make": Launching failed
+
+Error: Program "make" not found in PATH
+PATH=[C:/Program Files/Java/jre1.8.0_65/bin/server;C:/Program Files/Java/jre1.8.0_65/bin;C:/Program Files/Java/jre1.8.0_65/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\MATLAB\R2012a\runtime\win64;C:\Program Files\MATLAB\R2012a\bin;C:\Program Files\Java\jdk1.8.0_65\bin;C:\Program Files\Java\jre1.8.0_65\bin;C:\Users\dell pc\Desktop;]
+23:38:46 **** Build of configuration Debug for project conv1 ****
+make all 
+Cannot run program "make": Launching failed
+
+Error: Program "make" not found in PATH
+PATH=[C:/Program Files/Java/jre1.8.0_65/bin/server;C:/Program Files/Java/jre1.8.0_65/bin;C:/Program Files/Java/jre1.8.0_65/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\MATLAB\R2012a\runtime\win64;C:\Program Files\MATLAB\R2012a\bin;C:\Program Files\Java\jdk1.8.0_65\bin;C:\Program Files\Java\jre1.8.0_65\bin;C:\Users\dell pc\Desktop]

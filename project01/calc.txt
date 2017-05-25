@@ -1,0 +1,270 @@
+import android.view.View;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.TextView;
+
+
+
+
+
+
+
+
+        Button button1 = (Button) findViewById(R.id.button1);
+        Button button2 = (Button) findViewById(R.id.button2);
+        Button button3 = (Button) findViewById(R.id.button3);
+        Button button4 = (Button) findViewById(R.id.button4);
+        Button button5 = (Button) findViewById(R.id.button5);
+        Button button6 = (Button) findViewById(R.id.button6);
+        Button button7 = (Button) findViewById(R.id.button7);
+        Button button8 = (Button) findViewById(R.id.button8);
+        Button button9 = (Button) findViewById(R.id.button9);
+        Button button0 = (Button) findViewById(R.id.button0);
+        Button buttonc = (Button) findViewById(R.id.buttonc);
+        Button buttone = (Button) findViewById(R.id.buttone);
+        Button buttonA = (Button) findViewById(R.id.buttonA);
+        Button buttonM = (Button) findViewById(R.id.buttonM);
+        Button buttonS = (Button) findViewById(R.id.buttonS);
+        Button buttonD = (Button) findViewById(R.id.buttonD);
+
+
+        button0.setOnClickListener(
+                new OnClickListener () {
+                    @Override
+                    public void onClick(View v) {
+
+                    }
+                    public void OnClick(View v) {
+                        TextView output = (TextView) findViewById(R.id.numtext);
+                        output.append("0");
+                    }
+                }
+
+        );
+        button1.setOnClickListener(
+                new OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+
+                    }
+                    public void OnClick(View v) {
+                        TextView output = (TextView) findViewById(R.id.numtext);
+                        output.append("1");
+                    }
+                }
+
+        );
+
+        button2.setOnClickListener(
+                new OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                    }
+                    public void OnClick(View v) {
+                        TextView output = (TextView) findViewById(R.id.numtext);
+                        output.append("2");
+                    }
+                }
+
+        );
+        button3.setOnClickListener(
+                new OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                    }
+                    public void OnClick(View v) {
+                        TextView output = (TextView) findViewById(R.id.numtext);
+                        output.append("3");
+                    }
+                }
+
+        );
+        button4.setOnClickListener(
+                new OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                    }
+                    public void OnClick(View v) {
+                        TextView output = (TextView) findViewById(R.id.numtext);
+                        output.append("4");
+                    }
+                }
+
+        );
+        button5.setOnClickListener(
+                new OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                    }
+                    public void OnClick(View v) {
+                        TextView output = (TextView) findViewById(R.id.numtext);
+                        output.append("5");
+                    }
+                }
+
+        );
+        button6.setOnClickListener(
+                new OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                    }
+                    public void OnClick(View v) {
+                        TextView output = (TextView) findViewById(R.id.numtext);
+                        output.append("6");
+                    }
+                }
+
+        );
+        button7.setOnClickListener(
+                new OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                    }
+                    public void OnClick(View v) {
+                        TextView output = (TextView) findViewById(R.id.numtext);
+                        output.append("7");
+                    }
+                }
+
+        );
+        button8.setOnClickListener(
+                new OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                    }
+                    public void OnClick(View v) {
+                        TextView output = (TextView) findViewById(R.id.numtext);
+                        output.append("8");
+                    }
+                }
+
+        );
+        button9.setOnClickListener(
+                new OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                    }
+                    public void OnClick(View v) {
+                        TextView output = (TextView) findViewById(R.id.numtext);
+                        output.append("9");
+                    }
+                }
+
+        );
+        buttonc.setOnClickListener(
+                new OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                    }
+                    public void OnClick(View v) {
+                        TextView output = (TextView) findViewById(R.id.numtext);
+                        output.setText("");
+                    }
+                }
+
+        buttonA.setOnClickListener(
+                new OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                    }
+                    public void OnClick(View v) {
+                        TextView output = (TextView) findViewById(R.id.numtext);
+                        tempdouble = Double.parseDouble(output.getText().toString());
+                        output.setText("");
+                        sign = "+";
+                    }
+                }
+
+        );
+
+        buttonS.setOnClickListener(
+                new OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                    }
+                    public void OnClick(View v) {
+                        TextView output = (TextView) findViewById(R.id.numtext);
+                        tempdouble = Double.parseDouble(output.getText().toString());
+                        output.setText("");
+                        sign = "-";
+                    }
+                }
+
+        );
+        buttonM.setOnClickListener(
+                new OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                    }
+                    public void OnClick(View v) {
+                        TextView output = (TextView) findViewById(R.id.numtext);
+                        tempdouble = Double.parseDouble(output.getText().toString());
+                        output.setText("");
+                        sign = "*";
+                    }
+                }
+
+        );
+        buttonD.setOnClickListener(
+                new OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                    }
+                    public void OnClick(View v) {
+                        TextView output = (TextView) findViewById(R.id.numtext);
+                        tempdouble = Double.parseDouble(output.getText().toString());
+                        output.setText("");
+                        sign = "/";
+                    }
+                }
+
+        );
+
+        buttone.setOnClickListener(
+                new OnClickListener(){
+                    @Override
+                    public void onClick(View v) {
+
+                    }
+                    public void OnClick(View v){
+                        TextView output = (TextView) findViewById(R.id.numtext);
+                        tempdouble2 = Double.parseDouble(output.getText().toString());
+
+                        if(sign=="+")
+                            output.setText(Double.toString(tempdouble+tempdouble2));
+                        if(sign=="-")
+                            output.setText(Double.toString(tempdouble-tempdouble2));
+                        if(sign=="*")
+                            output.setText(Double.toString(tempdouble*tempdouble2));
+                        if(sign== "/") {
+                            if (tempdouble2 == 0)
+                                output.setText("ERROR");
+
+                            else
+                            output.setText(Double.toString(tempdouble / tempdouble2));
+                        }
+
+
+
+
+                    }
+                }
+
+
+        );

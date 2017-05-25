@@ -1,0 +1,41 @@
+package codejam;
+ import java.util.*;
+public class codejam2 {
+public static void main(String args[]){
+	Scanner sc=new Scanner(System.in);
+	int n=sc.nextInt();
+	for(int i=0 ;i<n;i++){
+		String s=sc.next();
+		int l=sc.nextInt();
+		int count=0;
+		ArrayList<Character> list= new ArrayList<Character>();
+		for(int k=0;k<s.length();k++){
+			list.add((Character)s.charAt(k));
+		}
+		
+		while(list !=null ){
+			if(list.get(0)=='+')
+			list.remove(0);
+		}
+		if(s.length()==0)
+		{
+			System.out.println("0");
+			break;
+		}
+		else if(l>s.length())
+		{
+			System.out.println("IMPOSSIBLE");
+			break;
+		}
+			for(int k=0;k<l;k++){
+			if(list.get(k)=='+')
+				list.set(k,'-');
+			else 	list.set(k,'+');
+			count++;
+		}
+		System.out.println(count);	
+		
+	}
+	sc.close();
+}
+}

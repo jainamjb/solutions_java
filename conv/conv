@@ -1,0 +1,74 @@
+#include <stdio.h>
+#include <math.h>
+#include <conio.h>
+long decitobi(long d){
+	long i,j,sum=0;
+	j=1;
+	while(d==1||d==0){
+		i=d%2;
+		sum=sum+(j*i);
+		d=d/2;
+		j*=10;
+	}return sum;
+}
+	long bitodeci(long b){
+		long i,j,k,sum=0;
+		i=10;
+		while(i<b){
+		
+		j=b&i;
+		k=0;
+		sum=sum+(pow(2,k)*j);
+		i*=10;
+		k++;
+	}return sum;
+	}
+	void decitohex(long d){
+		long i,j,k;
+		char ch;
+		do{
+		if(d<16){
+			if(d==10)ch='A';if(d==11)ch='B';if(d==12)ch='C';if(d==13)ch='D';if(d==14)ch='E';if(d==15)ch='F';
+			if(d<10)ch=d;
+			printf("%ld\r",ch);}
+		if(d>16){
+		i=d%16;
+			if(i<16){
+			if(i==10)ch='A';if(i==11)ch='B';if(i==12)ch='C';if(i==13)ch='D';if(i==14)ch='E';if(i==15)ch='F';
+		}
+		if(i<10)ch=d;
+		printf("%ld\r",ch);
+		d=d/16;}
+		}while(d>16);	
+	}
+	
+		void decitooct(long d){
+		long i;
+		do{
+		i=d%8;
+		printf("%ld\r",i);
+		d/=8;
+	}while(d>8);
+	}
+	void octtobi(long oct){
+		long i,j=10;
+		do{
+		i=oct%j;
+		printf("%ld\r",decitobi(i));
+		j*=10;
+		oct/=10;}
+		while(i>0);
+	}
+ 	
+	void bitooct(long bi){
+		long i,j=1000;
+		do{
+		i=bi%j;
+		printf("%ld\r",bitodeci(i));
+		bi/=1000;}while(i>0);
+	}
+	
+int main(){
+	printf("%ld",decitobi(4));
+	getch();
+}
